@@ -1,0 +1,49 @@
+.audio-recorder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.record-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.record-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.record-button.recording {
+  animation: pulse 1.5s infinite;
+  background-color: #28a745;
+}
+
+.recording-time {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 500;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
